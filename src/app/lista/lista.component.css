@@ -1,0 +1,18 @@
+.bloque {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.spacer {
+    flex: 1 0 auto;
+  }
+  .checkbox {
+    height: 20px;
+    width: 20px;
+    background-color: #2196F3;
+  }
+  textarea{
+    outline: none;
+    border-bottom-color: #2196F3;
+  }
+  

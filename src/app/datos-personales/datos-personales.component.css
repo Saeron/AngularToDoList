@@ -1,0 +1,29 @@
+.curriculum {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 80%;
+    border-radius: 2%;
+    background-color: #FBFBFB;
+}
+.curriculum > * {
+    margin: 3%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.foto{
+    margin-top: 2%;
+    border-radius: 5%; 
+    
+}
+.datos {
+    margin-left:  5%;
+    margin-right: 5%;
+    color: #909495;
+    
+}
+h5 {
+    margin-top: 0.2%;
+}
+h3 {
+    color: #9565C5;
+}

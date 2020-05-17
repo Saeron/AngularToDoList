@@ -1,0 +1,10 @@
+create table lineas ( 
+id int auto_increment, 
+ramdon varchar(20) not null,
+msg varchar(300) not null, 
+fechaini timestamp default current_timestamp,
+fechafin timestamp default current_timestamp on update current_timestamp, 
+done int default 0,
+user varchar(20), 
+primary key (id),
+foreign key (ramdon) references listas(ramdon) on delete cascade on update cascade);

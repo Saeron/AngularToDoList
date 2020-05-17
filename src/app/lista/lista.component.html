@@ -1,0 +1,29 @@
+<div class="bloque">
+
+  <ul class="mdl-list">
+    <li class="mdl-list__item" tabindex="0">
+      <span class="mdl-list-item" name="texto">
+        <textarea (keyup.enter)="addLine()" [(ngModel)]="mensaje" class="mdl-textfield__input" type="text" cols="80" type="text"
+          placeholder="Escribe aquí tu tarea pendiente." autofocus></textarea>
+      </span>
+      <span class="spacer"></span>
+      <span class="mat-icon-button">
+        <button (click)="addLine()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
+
+      </span>
+    </li>
+    <li *ngFor="let fila of lista" class="mdl-list__item" tabindex="0">
+      <span class="mdl-list__item-primary-content">
+        {{fila.msg}}
+      </span>
+
+      <span class="mdl-list__item-secondary-action">
+        <!--<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="{{fila.id}}">-->
+          <input (change)="marcar(fila.id)" type="checkbox" id="{{fila.id}}" class="mdl-checkbox__input" />
+        <!--</label>-->
+      </span>
+    </li>
+  </ul>
+</div>

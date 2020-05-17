@@ -1,0 +1,36 @@
+.superior{
+    background-color:#8e44ad;
+    padding: 7%;
+}
+.superior > button {
+    background-color: white;
+    color: #8e44ad;
+}
+.inferior{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.inferior > button{
+    margin: 5%;
+    border: none;
+    background: none;
+    min-width: 0
+}
+.inferior >*{
+    margin: 5%;
+    justify-content: center;
+}
+.aclaracion {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 3%;
+}
+.encabezado{
+    color: white;
+}
+.centrado{
+    
+}
+
